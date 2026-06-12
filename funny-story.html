@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funny Story</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="container2">
+    <h1>FUNNY STORY</h1>
+
+    <section class="story-link">
+      <p>
+        <a href="PASTE-YOUR-WORK-LINK-HERE" target="_blank">
+          Read Funny Story
+        </a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
