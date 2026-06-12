@@ -1,106 +1,71 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- import fonts here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap" rel="stylesheet">
+  <title>Josh Sitch</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-    <title>Author Website</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  
-  <body>
-    <!-- menu header -->
-    <div id="header-placeholder"></div>
-    <!-- load header -->
-    <script>
-      fetch("header.html")
-        .then((res) => res.text())
-        .then((html) => {
-          document.getElementById("header-placeholder").innerHTML = html;
-        });
-    </script>
+<body>
 
-    <div class="container">
-      <header>
-        <!-- edit author headshot below -->
-        <img
-          src="./img/lukey.jpg"
-          alt="Author Headshot"
-        />
-        <h1>JOSH SITCH</h1>
-        <p>Author | Artist | Speaker</p>
-      </header>
+  <div id="header-placeholder"></div>
 
-      <section class="bio">
-        <!-- edit author bio below -->
-        <p>
-          Josh Sitch makes the world his own.
-          <p></p>
-          He is currently on his third year of a Bachelor of arts (Creative Writing) degree at RMIT
-        </p>
-      </section>
+  <script>
+    fetch("header.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
 
-      <section class="publications">
-        <h2>Publication History</h2>
-        <!-- edit author publications below, creating new list items -->
-        <ul>
-          <li><a href="#">The Unspoken Years (2023)</a></li>
-          <li><a href="#">Saltwater Dreams (2021)</a></li>
-          <li><a href="#">Pieces of the Sky (2019)</a></li>
-          <li>
-            <a href="./publications.html"
-              >Journal articles and essays (see full list)</a
-            >
-          </li>
-        </ul>
-      </section>
+  <div class="container">
 
-      <section class="awards">
-        <h2>Awards and Recognition</h2>
-        <ul>
-          <li>
-            <a href="#">Miles Franklin Literary Award – Finalist (2023)</a>
-          </li>
-          <li>
-            <a href="#">Victorian Premier's Literary Award – Winner (2021)</a>
-          </li>
-          <li><a href="#">Pushcart Prize Nomination (2020)</a></li>
-        </ul>
-      </section>
+    <header>
+      <img
+        src="./img/lukey.jpg"
+        alt="Josh Sitch Headshot"
+      />
 
-      <section class="contact">
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:jane.doe@example.com">jane.doe@example.com</a>
-        </p>
-        <p>Representation: <a href="#">XYZ Literary Agency</a></p>
-      </section>
+      <h1>JOSH SITCH</h1>
 
-      <section class="socials">
-        <h2>Follow</h2>
-        <p>
-          <a href="https://twitter.com/janedoe">Twitter</a> |
-          <a href="https://instagram.com/janedoe">Instagram</a> |
-          <a href="https://linkedin.com/in/janedoe">LinkedIn</a>
-        </p>
-      </section>
-    </div>
-  </body>
+      <p>Author | Artist | Speaker</p>
+    </header>
+
+    <section class="bio">
+      <p>
+        Josh Sitch makes the world his own.
+      </p>
+
+      <br>
+
+      <p>
+        He is currently in his third year of a Bachelor of Arts (Creative Writing)
+        degree at RMIT University.
+      </p>
+    </section>
+
+    <section class="publications" style="text-align:center; margin-top:60px;">
+      <h2>Publications</h2>
+
+      <p>
+        <a href="./publications.html">View Publications</a>
+      </p>
+    </section>
+
+  </div>
+
+</body>
 </html>
+```
